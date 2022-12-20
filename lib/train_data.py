@@ -9,13 +9,11 @@ from sklearn.neural_network import MLPClassifier
 class TrainData:
     
     def __init__(self, params):
-        
-        self.model = params.get("MLPClassifier")
+
         self.input_x_train = params.get("input_x_train")
         self.input_y_train = params.get("input_y_train")
-        self.output_model_file = params.get("output_model")
-        
-        print("A")
+        self.output_model = params.get("output_model")
+
     
     def execute(self):
         
@@ -28,9 +26,9 @@ class TrainData:
         
         clf = MLPClassifier(random_state=1, max_iter=300)
         clf.fit(x,y)
-        dump(clf, self.output_model_file)
+        dump(clf, self.output_model)
         
-        print(self.output_model_file)
+
         
         
     

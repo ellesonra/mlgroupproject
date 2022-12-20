@@ -39,9 +39,9 @@ def main():
         
         params ={
 
-            'input_x_train ':           input_x_train_file,
+            'input_x_train':           input_x_train_file,
             'input_y_train' :           input_y_train_file,
-            'output_model'       :           output_model_file
+            'output_model'  :            output_model_file
         }
         
     
