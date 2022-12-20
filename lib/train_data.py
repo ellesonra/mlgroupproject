@@ -12,7 +12,9 @@ class TrainData:
 
         self.input_x_train = params.get("input_x_train")
         self.input_y_train = params.get("input_y_train")
+
         self.output_model = params.get("output_model")
+
 
     
     def execute(self):
@@ -24,7 +26,7 @@ class TrainData:
         x = df_x.values
         y = df_y.values
         
-        clf = MLPClassifier(random_state=1, max_iter=300)
+        clf = MLPClassifier(random_state=1, max_iter=3000)
         clf.fit(x,y)
         dump(clf, self.output_model)
         
