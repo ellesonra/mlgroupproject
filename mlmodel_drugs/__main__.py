@@ -34,12 +34,12 @@ def main():
     output_model_file   = args.output_model_file
     #input_model_file   = args.input_model_file
     
-    print(mode)
+
     if mode == 'train':
         
         params ={
 
-            'input_x_train ':           input_x_train_file,
+            'input_x_train':           input_x_train_file,
             'input_y_train' :           input_y_train_file,
             'output_model'       :           output_model_file
         }

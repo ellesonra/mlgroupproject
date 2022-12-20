@@ -14,8 +14,6 @@ class TrainData:
         self.input_x_train = params.get("input_x_train")
         self.input_y_train = params.get("input_y_train")
         self.output_model_file = params.get("output_model")
-        
-        print("A")
     
     def execute(self):
         
