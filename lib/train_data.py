@@ -24,7 +24,7 @@ class TrainData:
         x = df_x.values
         y = df_y.values
         
-        clf = MLPClassifier(random_state=1, max_iter=300)
+        clf = MLPClassifier(random_state=1, max_iter=3000)
         clf.fit(x,y)
         dump(clf, self.output_model_file)
         
