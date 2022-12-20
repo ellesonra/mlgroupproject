@@ -1,0 +1,14 @@
+env
+# Ignore IDE generated files
+.idea
+
+# Ignoring pycache inside mlgroupproject
+mlmodel/__pycache__
+__pycache__
+
+
+
+
+
+
+
